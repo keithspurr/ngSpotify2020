@@ -4,7 +4,6 @@ import {Artist} from '../../../../Artist';
 import {Album} from '../../../../Album';
 import {SpotifyService} from '../../services/spotify.service';
 import { map } from 'rxjs/operators';
-import { subscribe } from 'rxjs';
 
 @Component({
     moduleId: module.id,
