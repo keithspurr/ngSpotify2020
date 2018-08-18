@@ -44,7 +44,6 @@ export class SpotifyService {
     getArtist(id: string) {
         if (id != null && id !== '') {
             return this.getAuth().pipe(mergeMap(res => {
-
                 const headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.auth.access_token);
                 this.artistUrl = 'https://api.spotify.com/v1/artists/' + id;
                 return this._http.get(this.artistUrl,  {headers: headers }).pipe(map(resp => {
@@ -101,7 +100,7 @@ export class SpotifyService {
             });
         } else {
             // retreive new token if current one invalid
-            return this.getAccessToken().pipe(map(res => {
+            return this.getAccessToken().pipe(map((res: Auth) => {
                 this.auth = res;
                 this.authTime = new Date().getSeconds();
                 return this.auth;

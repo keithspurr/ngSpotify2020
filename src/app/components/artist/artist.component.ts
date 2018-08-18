@@ -7,13 +7,14 @@ import { map } from 'rxjs/operators';
 
 @Component({
     moduleId: module.id,
+    // tslint:disable-next-line:component-selector
     selector: 'artist',
     templateUrl: 'artist.component.html'
 })
 export class ArtistComponent implements OnInit {
     id: string;
-    artist: Artist[];
-    albums: Album[];
+    artist: Object;
+    albums: Object;
 
     constructor(
         private _spotifyService: SpotifyService,
@@ -31,7 +32,7 @@ export class ArtistComponent implements OnInit {
                         });
                     this._spotifyService.getAlbums(id)
                         .subscribe(albums => {
-                            this.albums = albums.items;
+                            this.albums = albums['items'];
                         });
                 });
     }

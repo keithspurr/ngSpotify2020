@@ -8,12 +8,13 @@ import { map } from 'rxjs/operators';
 
 @Component({
     moduleId: module.id,
+    // tslint:disable-next-line:component-selector
     selector: 'album',
     templateUrl: 'album.component.html'
 })
 export class AlbumComponent implements OnInit {
     id: string;
-    album: Album[];
+    album: any;
 
     constructor(
         private _spotifyService: SpotifyService,

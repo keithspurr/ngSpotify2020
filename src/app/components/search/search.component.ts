@@ -4,19 +4,20 @@ import {Artist} from '../../../../Artist';
 
 @Component({
     moduleId: module.id,
+    // tslint:disable-next-line:component-selector
     selector: 'search',
     templateUrl: 'search.component.html'
 })
 export class SearchComponent {
     searchStr: string;
-    searchRes: Artist[];
+    searchRes: any;
 
     constructor(private _spotifyService: SpotifyService) {
 
     }
 
     searchMusic() {
-        this._spotifyService.searchMusic(this.searchStr).subscribe(res => {
+        this._spotifyService.searchMusic(this.searchStr).subscribe((res: any) => {
             this.searchRes = res.artists.items;
         });
     }
