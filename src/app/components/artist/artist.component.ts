@@ -9,7 +9,9 @@ import { map } from 'rxjs/operators';
     moduleId: module.id,
     // tslint:disable-next-line:component-selector
     selector: 'artist',
-    templateUrl: 'artist.component.html'
+    templateUrl: 'artist.component.html',
+    styleUrls: ['artist.component.css']
+
 })
 export class ArtistComponent implements OnInit {
     id: string;

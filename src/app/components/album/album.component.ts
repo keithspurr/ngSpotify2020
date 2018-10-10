@@ -5,12 +5,12 @@ import {Album} from '../../../../Album';
 import {SpotifyService} from '../../services/spotify.service';
 import { map } from 'rxjs/operators';
 
-
 @Component({
     moduleId: module.id,
     // tslint:disable-next-line:component-selector
     selector: 'album',
-    templateUrl: 'album.component.html'
+    templateUrl: 'album.component.html',
+    styleUrls: ['album.component.css']
 })
 export class AlbumComponent implements OnInit {
     id: string;

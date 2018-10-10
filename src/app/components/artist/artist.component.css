@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+.artist-header{
+    border: 1px solid #555;
+    height: 100%;
+    min-height: 244px;
+    border-radius: 10px;
+    padding: 20px 0 23px 30px;
+    margin: -15px 0 15px;
+    border-bottom:solid 1px #555;
+}
+.artist-header .artist-thumb {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    float: left;
+    padding: 0;
+    width: 100%;
+    height:auto;
+    margin: 0;
+    /*clip-path: circle(42% at 50% 50%);*/
+}
+
+.artist-header h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.7em;
+    width: 80%;
+    display: block;
+    padding: 5px 0;
+    color: #fff;
+    margin: 0;
+    clear: left;
+    text-align: left;
+}
+.artist-header p {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    font-weight: 100;
+    font-size: 1em;
+    clear: left;
+    color: #ffffff;
+}
+
+/* Album Content */
+/* Album Content */
+/* Album Content */
+.artist-albums {
+    width: 100%;
+    max-width: 1920px;
+    display: block;
+    border: 1px solid #555;
+    border-radius: 20px;
+    margin: 0 auto !important;
+    padding: 20px 12% 25px !important;
+}
+.artist-albums .row {
+    align-content: center;
+    margin: 0 !important;
+    padding: 0 0 0 5% !important;
+}
+
+.artist-albums .col-md-4 {
+    padding: 0;
+    display: block !important;
+    width: 240px !important;
+    margin: 0 15px 15px 0 !important;
+}
+.artist-albums .col-md-4 .album {
+    text-align:center;
+    background: #241e1e;
+    padding: 10px 20px;
+    border: #666 1px solid;
+}
+
+.artist-albums .col-md-4 .album .album-thumb{
+    width:85%;
+}
+.artist-albums .well {
+    margin: 0 !important;
+    padding: 30px 15px 0 !important;
+    border-radius: 11px;
+    width: 240px !important;
+    height: 350px;
+    display: block !important;
+}
+.artist-albums .well h4 {
+    color: #ffffff;
+    margin: .5em 0 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+.artist-albums .well .btn.btn-default.btn-block {
+    color: #97c2df !important;
+    width: 140px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.2em;
+    letter-spacing: .05em;
+}
+.artist-albums .well .btn.btn-default.btn-block:hover {
+    text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+@media only screen and ( min-width: 320px ) {
+    .artist-albums { padding: 20px 0 30px 9% !important;  }
+}
+@media only screen and ( min-width: 480px ) {
+    .artist-albums { padding: 20px 18% 25px !important; padding: 20px 0 30px 15% !important;  }
+}
+@media only screen and ( min-width: 600px ) {
+    .artist-albums { padding: 20px 0 30px 22% !important;  }
+}
+@media only screen and ( min-width: 766px ) {
+    .artist-header { height: 215px; }
+    .artist-header .artist-thumb { margin: 0 20px 0 -10px; }
+    .artist-header h1 { font-size: 3.5em;
+            width: 80%;
+            display: block;
+            padding: 5px 0;
+            color: #fff;
+            margin: 25px 0 0 30px;
+            letter-spacing: 0.15    em;
+            font-weight: 900;
+            clear: none;
+            text-align: left;
+        }
+    .artist-header p { clear: none; }
+    .artist-albums { padding: 20px 0 30px 10% !important; } 
+}
+@media only screen and ( min-width: 985px ) {
+    .artist-albums { padding: 20px 0 30px 5% !important;  }
+}
+@media only screen and ( min-width: 1200px ) {
+    .artist-albums { padding: 20px 0 30px 0 !important;  }
+}
