@@ -91,7 +91,7 @@ export class SpotifyService {
     // {if (this.auth.access_token == null || this.authTime < (new Date().getSeconds() - 60))
 
     getAuth(): Observable<any> {
-        // check current token for validity                                 subtract ten seconds to account for possible timeout
+        // check current token for validity subtract ten seconds to account for possible timeout
         if (this.auth.access_token != null && this.authTime != null && this.authTime < new Date().getSeconds() - 10) {
             // convert current stored token to observable
             return new Observable((observer) => {
