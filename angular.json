@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ngspotify-new"
+  "defaultProject": "ngspotify-new",
+  "cli": {
+    "analytics": false
+  }
 }
