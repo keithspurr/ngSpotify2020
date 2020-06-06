@@ -1,6 +1,6 @@
 # NgspotifyNew
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. Updated in IP1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9. Updated in VSC.
 
 ## Development server
 
